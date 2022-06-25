@@ -35,9 +35,24 @@ const Intro = () => {
         <img src={Vector1} alt='' />
         <img src={Vector2} alt='' />
         <img src={Boy} alt='' />
-        <div>
-          <FloatingDiv image={Crown} text={['Web', 'Developer']}/>
+        <img src={GlassEmoji} alt='' />
+        <div style={{ top: '-4%', left: '56%' }}>
+          <FloatingDiv image={Crown} text={['Web', 'Developer']} />
         </div>
+        <div style={{ top: '18.6rem', left: '1rem' }}>
+          <FloatingDiv image={Thumbup} text={['Best Design', 'Award']} />
+        </div>
+        <div className='blur' style={{ background: 'rgb(238, 210 255)' }}></div>
+        <div
+          className='blur'
+          style={{
+            background: '#c1f5ff',
+            top: '17rem',
+            width: '21rem',
+            height: '11rem',
+            left: '-9rem',
+          }}
+        ></div>
       </div>
     </div>
   );

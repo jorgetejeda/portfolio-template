@@ -75,5 +75,25 @@
 }
 .i-right > :nth-child(3) {
   transform: scale(1.4);
-  left: 28%;
+  left: 23%;
+  top: .3rem;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.6);
+  left: -24%;
+  top: -19%;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+  top: 0;
+  left: 56%;
 }
