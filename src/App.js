@@ -2,6 +2,7 @@ import './App.css'
 import Experience from './components/Experience/Experience'
 import Intro from './components/Intro/Intro'
 import Navbar from './components/Navbar/Navbar'
+import Portfolio from './components/Portfolio/Portfolio'
 import Services from './components/Services/Services'
 import Works from './components/Works/Works'
 
@@ -13,6 +14,7 @@ const App = () => {
       <Services />
       <Experience />
       <Works />
+      <Portfolio />
     </div>
   )
 }
