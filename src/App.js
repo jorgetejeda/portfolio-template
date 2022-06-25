@@ -1,8 +1,11 @@
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
   return (
-    <div className='App'>I am here with new settings</div>
+    <div className='App'>
+      <Navbar />
+    </div>
   )
 }
 
