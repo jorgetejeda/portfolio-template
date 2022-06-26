@@ -1,14 +1,13 @@
-.Footer{
+.footer {
   display: flex;
   align-items: center;
   margin: -0.5rem -3.5rem;
   position: relative;
   margin-top: -7rem;
 }
-
-.f-content{
-  position:absolute;
-  display:flex;
+.f-content {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -17,12 +16,12 @@
   gap: 4rem;
   color: white;
 }
-
-.f-icons{
+.f-icons {
   display: flex;
   gap: 2rem;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px){
   .f-content{
     transform: scale(.5);
   }
