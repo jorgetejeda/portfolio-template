@@ -70,14 +70,35 @@
   z-index: -1;
 }
 
-.blueCircle{
+.blueCircle {
   background: #1949b8;
   left: 10rem;
   top: -2rem;
 }
 
-.yellowCircle{
+.yellowCircle {
   background: #f5c32c;
   left: 10rem;
   top: 6rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+  }
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.7);
+  }
+  .w-mainCircle{
+    position: static;
+  }
+  .w-backCircle{
+    left: 8rem!important;
+  }
 }

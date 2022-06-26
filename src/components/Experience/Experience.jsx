@@ -2,7 +2,7 @@ import React from 'react'
 import './Experience.css'
 const Experience = () => {
   return (
-    <div className="Experience">
+    <div className="Experience" id='Experiences'>
       <div className="achivement">
         <div className="circle">8+</div>
         <span>years</span>

@@ -1,4 +1,8 @@
 import React from 'react';
+import FloatingDiv from '../FloatingDiv/FloatingDiv';
+
+import { motion } from 'framer-motion';
+
 import Github from '../../img/github.png';
 import LinkedIn from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
@@ -10,9 +14,13 @@ import Crown from '../../img/crown.png';
 import GlassEmoji from '../../img/glassesimoji.png';
 
 import './Intro.css';
-import FloatingDiv from '../FloatingDiv/FloatingDiv';
 
 const Intro = () => {
+  const transition = {
+    duration: 2,
+    type: 'spring',
+  };
+
   return (
     <div className='Intro'>
       <div className='i-left'>
@@ -35,13 +43,32 @@ const Intro = () => {
         <img src={Vector1} alt='' />
         <img src={Vector2} alt='' />
         <img src={Boy} alt='' />
-        <img src={GlassEmoji} alt='' />
-        <div style={{ top: '-4%', left: '56%' }}>
+        <motion.img
+          initial={{ left: '-36%' }}
+          whileInView={{ left: '-24%' }}
+          transition={transition}
+          src={GlassEmoji}
+          alt=''
+        />
+        <motion.div
+          initial={{ top: '-4%', left: '74%' }}
+          whileInView={{ left: '68%' }}
+          transition={transition}
+          style={{ top: '-4%', left: '56%' }}
+          className='floating-div'
+        >
           <FloatingDiv image={Crown} text={['Web', 'Developer']} />
-        </div>
-        <div style={{ top: '18.6rem', left: '1rem' }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: '9rem', top: '18rem' }}
+          whileInView={{ left: '0rem' }}
+          transition={transition}
+          style={{ top: '18.6rem', left: '1rem' }}
+          className='floating-div'
+
+        >
           <FloatingDiv image={Thumbup} text={['Best Design', 'Award']} />
-        </div>
+        </motion.div>
         <div className='blur' style={{ background: 'rgb(238, 210 255)' }}></div>
         <div
           className='blur'

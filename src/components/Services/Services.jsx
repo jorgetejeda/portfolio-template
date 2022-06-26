@@ -11,7 +11,7 @@ import './Services.css';
 
 const Services = () => {
   return (
-    <div className='Services'>
+    <div className='Services' id='Services'>
       <div className='awesome'>
         <span>My Awesome</span>
         <span>services</span>
@@ -38,7 +38,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading='Developer'
-            detail='Html, Css, Javascript, React'
+            detail='Html, Css, Javascript, React, Angular, Node'
           />
         </div>
         <div style={{ left: '12rem', top: '19rem' }}>

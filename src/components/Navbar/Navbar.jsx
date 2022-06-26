@@ -1,8 +1,12 @@
-import React from 'react'
-import Toggle from '../Toggle/Toggle'
-import './Navbar.css'
+import React from 'react';
+import Toggle from '../Toggle/Toggle';
+
+import { Link as Scroll } from 'react-scroll';
+
+import './Navbar.css';
 
 const Navbar = () => {
+  const navigation = ['Home', 'Services', 'Experiences', 'Portfolio'];
   return (
     <div className='n-wrapper'>
       <div className='n-left'>
@@ -11,18 +15,20 @@ const Navbar = () => {
       </div>
       <div className='n-right'>
         <div className='n-list'>
-          <ul style={{listStyleType: 'none'}}>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Experience</li>
-            <li>Portfolio</li>
-            <li>Testimonials</li>
+          <ul style={{ listStyleType: 'none' }}>
+            {navigation.map((item) => (
+              <Scroll key={item} spy={true} to={item} smooth={true}>
+                <li>{item}</li>
+              </Scroll>
+            ))}
           </ul>
         </div>
-        <button className='button n-button'>Contact</button>
+        <Scroll spy={true} to='Contact' smooth={true}>
+          <button className='button n-button'>Contact</button>
+        </Scroll>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

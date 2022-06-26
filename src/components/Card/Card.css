@@ -34,3 +34,9 @@
   font-size: 18px;
   color: #5290fd
 }
+
+@media screen and (max-width: 480px) {
+  .Card{
+    width: auto;
+  }
+}

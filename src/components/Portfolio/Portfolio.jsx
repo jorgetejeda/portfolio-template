@@ -9,7 +9,7 @@ import './Portfolio.css';
 
 const Portfolio = () => {
   return (
-    <div className='Portfolio'>
+    <div className='Portfolio' id='Portfolio'>
       <span>Recent Projects</span>
       <span>Portfolio</span>
       <Swiper
